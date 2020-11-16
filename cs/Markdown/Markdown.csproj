@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Infrastructure\Tokens\IStyledToken.cs" />
+      <Compile Remove="Infrastructure\ITaggedText.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="example.md" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ninject" Version="4.0.0-beta-0134" />
+    </ItemGroup>
+
+</Project>
